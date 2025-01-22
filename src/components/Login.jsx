@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 export default function Login() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="min-h-screen flex justify-between items-center">
       <p className="w-3/5 lg:block hidden">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque sequi impedit aperiam sunt, minus, repellendus quae quod modi quos quo expedita quaerat veniam cumque natus quasi voluptatem nobis ipsa vel.</p>
@@ -23,13 +26,20 @@ export default function Login() {
           </div>
           <div className="flex justify-center items-center gap-2 mb-2">
             <input
-              type="password"
+              type={isOpen ? "text" : "password"}
               name="password"
               required
               className="w-full px-2 py-2 border-2 border-gray-200 rounded-md"
               placeholder="Password"
             />
-            <p>ic</p>
+            <button
+              type="button"
+              aria-label={isOpen ? "Hide password" : "Show password"}
+              onClick={() => setIsOpen(!isOpen)}
+              className="p-1"
+            >
+              {isOpen ? "👁️" : "X"}
+            </button>
           </div>
           <div className="flex items-center justify-between">
             <button

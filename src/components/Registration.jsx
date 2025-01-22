@@ -1,13 +1,17 @@
+import { useState } from "react";
 
 
 export default function Registration() {
+  const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+  const [isConfirmPasswordVisible, setIsConfirmPasswordVisible] = useState(false);
+
   return (
     <div className="m-2 md:w-3/4 w-4/5 mx-auto mt-4">
       <h1 className="text-3xl font-semibold my-3">
         <span className="text-pink-500">Create an</span>{" "}
         <span className="text-blue-600">Account</span>
       </h1>
-      <hr className="w-2/6 my-4"/>
+      <hr className="w-2/6 my-4" />
       <form className="">
         <div className="mb-1">
           <label
@@ -48,13 +52,20 @@ export default function Registration() {
           <p className="text-gray-500 my-1">Password must contain 8 or more characters, including at least one number, one uppercase letter, and one lowercase letter.</p>
           <div className="md:w-3/5 w-full flex justify-center items-center gap-2">
             <input
-              type="password"
+              type={isPasswordVisible ? "text" : "password"}
               name="password"
               required
               className="w-full px-2 py-2 border-2 border-gray-200 rounded-md underline"
               placeholder="Password"
             />
-            <p>ic</p>
+            <button
+              type="button"
+              aria-label={isPasswordVisible ? "Hide password" : "Show password"}
+              onClick={() => setIsPasswordVisible(!isPasswordVisible)}
+              className="p-1"
+            >
+              {isPasswordVisible ? "👁️" : "X"}
+            </button>
           </div>
         </div>
         <div className="mb-1">
@@ -65,13 +76,20 @@ export default function Registration() {
           </label>
           <div className="md:w-3/5 w-full flex justify-center items-center gap-2">
             <input
-              type="password"
+              type={isConfirmPasswordVisible ? "text" : "password"}
               name="confirmPassword"
               required
               className="w-full px-2 py-2 border-2 border-gray-200 rounded-md underline"
               placeholder="Confirm Password"
             />
-            <p>ic</p>
+            <button
+              type="button"
+              aria-label={isConfirmPasswordVisible ? "Hide confirm password" : "Show confirm password"}
+              onClick={() => setIsConfirmPasswordVisible(!isConfirmPasswordVisible)}
+              className="p-1"
+            >
+              {isConfirmPasswordVisible ? "👁️" : "X"}
+            </button>
           </div>
         </div>
         <div className="flex items-center justify-between">
