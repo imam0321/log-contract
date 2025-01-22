@@ -96,11 +96,54 @@ export default function Home() {
                 Contact our Account Manager
               </button>
             </div>
-
           </div>
         </div>
       </div>
 
+      {/* Articles Section  */}
+      <div className="my-16">
+        <div>
+          <h1 className="text-2xl font-semibold">Recommend Articles</h1>
+          <p className="text-gray-500">Demonstrating the return on investment from AI</p>
+        </div>
+        <div className="my-6 grid md:grid-cols-6 grid-cols-2 md:gap-1 gap-y-4">
+          <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSngtwcvE2cXxCgXDLksJt6ySm_e4CZ-USqfg&s" className="md:h-[170px] h-[140px] md:w-[165px] w-[135px] rounded-lg" alt="" />
+            <h1 className="md:text-md text-sm font-semibold mt-1">Thinking Components</h1>
+            <p className="text-gray-500">Lena Logic</p>
+          </div>
+
+          <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSngtwcvE2cXxCgXDLksJt6ySm_e4CZ-USqfg&s" className="md:h-[170px] h-[140px] md:w-[165px] w-[135px] rounded-lg" alt="" />
+            <h1 className="md:text-md text-sm font-semibold mt-1">Thinking Components</h1>
+            <p className="text-gray-500">Lena Logic</p>
+          </div>
+
+          <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSngtwcvE2cXxCgXDLksJt6ySm_e4CZ-USqfg&s" className="md:h-[170px] h-[140px] md:w-[165px] w-[135px] rounded-lg" alt="" />
+            <h1 className="md:text-md text-sm font-semibold mt-1">Thinking Components</h1>
+            <p className="text-gray-500">Lena Logic</p>
+          </div>
+
+          <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSngtwcvE2cXxCgXDLksJt6ySm_e4CZ-USqfg&s" className="md:h-[170px] h-[140px] md:w-[165px] w-[135px] rounded-lg" alt="" />
+            <h1 className="md:text-md text-sm font-semibold mt-1">Thinking Components</h1>
+            <p className="text-gray-500">Lena Logic</p>
+          </div>
+
+          <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSngtwcvE2cXxCgXDLksJt6ySm_e4CZ-USqfg&s" className="md:h-[170px] h-[140px] md:w-[165px] w-[135px] rounded-lg" alt="" />
+            <h1 className="md:text-md text-sm font-semibold mt-1">Thinking Components</h1>
+            <p className="text-gray-500">Lena Logic</p>
+          </div>
+
+          <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSngtwcvE2cXxCgXDLksJt6ySm_e4CZ-USqfg&s" className="md:h-[170px] h-[140px] md:w-[165px] w-[135px] rounded-lg" alt="" />
+            <h1 className="md:text-md text-sm font-semibold mt-1">Thinking Components</h1>
+            <p className="text-gray-500">Lena Logic</p>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
