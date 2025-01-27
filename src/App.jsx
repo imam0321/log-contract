@@ -1,6 +1,7 @@
 import Contact from "./components/Contact"
 import Home from "./components/Home/Home"
 import Login from "./components/Login"
+import Profile from "./components/profile/Profile"
 import Registration from "./components/Registration"
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
       {/* <Login/> */}
       {/* <Registration/> */}
       {/* <Contact/> */}
-      <Home/>
+      {/* <Home/> */}
+      <Profile/>
     </>
   )
 }
