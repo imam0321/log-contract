@@ -1,6 +1,9 @@
 import Banner from "../../assets/banner.png";
 import Avatar from "../../assets/Avatar.png"
 import { FaStar, FaStarHalfStroke, FaArrowTrendUp } from "react-icons/fa6";
+import TableRight from "./TableRight";
+import TableLeft from "./TableLeft";
+import TableCenter from "./TableCenter";
 
 export default function Profile() {
   return (
@@ -47,21 +50,16 @@ export default function Profile() {
         </div>
       </div>
 
-      <div className="flex justify-between px-11 mt-11">
-        <div className="w-[200px]">
-          <h3>Setting</h3>
-          <ul className="pt-2 ms-2">
-            <li><span className="font-light mr-1">✓</span>Dashboard</li>
-            <li>Profile</li>
-            <li>Notifications</li>
-            <li>Display</li>
-          </ul>
+      {/* Table Part  */}
+      <div className="flex justify-between px-11 mt-11 gap-4">
+        <div className="w-[120px]">
+          <TableLeft/>
         </div>
-        <div className="w-[651px] h-[] border"><h1>duasha</h1></div>
-        <div className="w-[350px]">
-          <div className="w-[350px] h-[854px] bg-gradient-to-t from-blue-600 to-pink-600 rounded-xl absolute top-44">
-
-          </div>
+        <div className="flx justify-center w-[751px] border rounded-lg px-6 py-4">
+          <TableCenter/>
+        </div>
+        <div className="w-[300px]">
+          <TableRight/>
         </div>
       </div>
     </div>
