@@ -4,6 +4,8 @@ import { FaStar, FaStarHalfStroke, FaArrowTrendUp } from "react-icons/fa6";
 import TableRight from "./TableRight";
 import TableLeft from "./TableLeft";
 import TableCenter from "./TableCenter";
+// import { FaSyncAlt } from "react-icons/fa";
+// import avatar from "../../assets/29 9.png"
 
 export default function Profile() {
   return (
@@ -51,15 +53,15 @@ export default function Profile() {
       </div>
 
       {/* Table Part  */}
-      <div className="flex justify-between px-11 mt-11 gap-4">
+      <div className="flex justify-between px-11 mt-11 gap-4 my-4">
         <div className="w-[120px]">
-          <TableLeft/>
+          <TableLeft />
         </div>
         <div className="flx justify-center w-[751px] border rounded-lg px-6 py-4">
-          <TableCenter/>
+          <TableCenter />
         </div>
-        <div className="w-[300px]">
-          <TableRight/>
+        <div className="w-[300px] h-[810px] ">
+          <TableRight />
         </div>
       </div>
     </div>
