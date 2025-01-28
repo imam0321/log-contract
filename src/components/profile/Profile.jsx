@@ -132,9 +132,9 @@ export default function Profile() {
           </div>
         </div>
 
-        <div className="max:w-[30%] ">
-          
-          <div className="absolute top-44">
+        <div className="max:w-[35%] ">
+
+          <div className="">
             {/* Right Top */}
             <div style={{ backgroundImage: `url(${RightBgImage})` }} className="bg-cover bg-center bg-no-repeat px-5 py-1 bg-gradient-to-t rounded-xl mx-auto">
               <div className="my-6">
@@ -190,50 +190,51 @@ export default function Profile() {
 
               </div>
             </div>
-          </div>
 
-          {/* Right bottom  */}
-          <div className="w-[25%] p-6 mx-auto bottom-0">
-            <h2 className="text-gray-500 font-bold mb-3">Readers</h2>
-            <div className="">
-              <div className="flex items-center justify-between mb-1">
-                <div className="flex items-center space-x-3">
-                  <img src={Picture} alt={Picture} className="w-10 h-10 rounded-full" />
-                  <div>
-                    <p className="font-semibold text-gray-800">Sindy Rheaume</p>
-                    <p className="text-gray-500 text-sm">150T • 10 horas</p>
+            <div className="w-full p-6 mx-auto bottom-0">
+              <h2 className="text-gray-500 font-bold mb-3">Readers</h2>
+              <div className="">
+                <div className="flex items-center justify-between mb-1">
+                  <div className="flex items-center space-x-3">
+                    <img src={Picture} alt={Picture} className="w-10 h-10 rounded-full" />
+                    <div>
+                      <p className="font-semibold text-gray-800">Sindy Rheaume</p>
+                      <p className="text-gray-500 text-sm">150T • 10 horas</p>
+                    </div>
                   </div>
+                  <button className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 transition">
+                    <FaBell className="text-blue-500" />
+                  </button>
                 </div>
-                <button className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 transition">
-                  <FaBell className="text-blue-500" />
-                </button>
-              </div>
-              <div className="flex items-center justify-between mb-1">
-                <div className="flex items-center space-x-3">
-                  <img src={Picture} alt={Picture} className="w-10 h-10 rounded-full" />
-                  <div>
-                    <p className="font-semibold text-gray-800">Sindy Rheaume</p>
-                    <p className="text-gray-500 text-sm">150T • 10 horas</p>
+                <div className="flex items-center justify-between mb-1">
+                  <div className="flex items-center space-x-3">
+                    <img src={Picture} alt={Picture} className="w-10 h-10 rounded-full" />
+                    <div>
+                      <p className="font-semibold text-gray-800">Sindy Rheaume</p>
+                      <p className="text-gray-500 text-sm">150T • 10 horas</p>
+                    </div>
                   </div>
+                  <button className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 transition">
+                    <FaBell className="text-blue-500" />
+                  </button>
                 </div>
-                <button className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 transition">
-                  <FaBell className="text-blue-500" />
-                </button>
-              </div>
-              <div className="flex items-center justify-between mb-1">
-                <div className="flex items-center space-x-3">
-                  <img src={Picture} alt={Picture} className="w-10 h-10 rounded-full" />
-                  <div>
-                    <p className="font-semibold text-gray-800">Sindy Rheaume</p>
-                    <p className="text-gray-500 text-sm">150T • 10 horas</p>
+                <div className="flex items-center justify-between mb-1">
+                  <div className="flex items-center space-x-3">
+                    <img src={Picture} alt={Picture} className="w-10 h-10 rounded-full" />
+                    <div>
+                      <p className="font-semibold text-gray-800">Sindy Rheaume</p>
+                      <p className="text-gray-500 text-sm">150T • 10 horas</p>
+                    </div>
                   </div>
+                  <button className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 transition">
+                    <FaBell className="text-blue-500" />
+                  </button>
                 </div>
-                <button className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 transition">
-                  <FaBell className="text-blue-500" />
-                </button>
               </div>
             </div>
           </div>
+
+
         </div>
       </div>
     </div>
