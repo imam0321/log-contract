@@ -1,15 +1,23 @@
-import { useState } from "react"
-
+import { useState } from "react";
 
 export default function ProfileEdit() {
-  const [isActive, setIsActive] = useState(false)
+  const [isOnExclusive, setIsOnExclusive] = useState(false);
+  const [isOnCollection, setIsOnCollection] = useState(false);
+
+  const handleExclusiveToggle = (event) => {
+    event.preventDefault();
+    setIsOnExclusive(!isOnExclusive);
+  };
+  const handleCollection = (event) => {
+    event.preventDefault();
+    setIsOnCollection(!isOnCollection);
+  };
 
   return (
     <>
       <div className="">
 
         <form className="md:w-3/5 mx-20">
-
           <div className="text-[#60646C] flex justify-between items-center mb-7">
             <h1 className="text-3xl font-bold">Edit Profile</h1>
             <p>last update: 20SS/SS/SS</p>
@@ -155,6 +163,7 @@ export default function ProfileEdit() {
 
           <hr className="border border-[#D9D9D9] mt-8 mb-2" />
 
+          {/* multiple buttons  */}
           <div className="mt-7 mb-11">
             <label className="block text-sm mb-1">
               Interest
@@ -205,7 +214,122 @@ export default function ProfileEdit() {
 
           <hr className="border border-[#D9D9D9] mt-8 mb-2" />
 
-          
+          <div className="mb-20 mt-7">
+            <label className="block text-sm mb-1">
+              Subscription
+            </label>
+            <div className="flex justify-between items-start gap-x-6 mt-6">
+
+              <div className="w-1/2">
+                <div className="flex items-center">
+                  <div className="text-center px-5 py-4 border-2 border-[#1E40AF] rounded-md mr-4">
+                    <p>👁️</p>
+                    <p className="mt-3">Basic Member</p>
+                  </div>
+                  <div className="text-center px-5 py-4  border-2 border-slate-100 rounded-md">
+                    <p>👁️</p>
+                    <p className="mt-3">Pro Member</p>
+                  </div>
+                </div>
+                <div className="mt-9">
+                  <label className="block text-sm mb-2">
+                    Card number
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    className="w-full px-3 py-1 text-[#71717A] border border-[#E4E4E7] rounded-md shadow-md"
+                  />
+                </div>
+                <div className="flex items-center mt-9">
+                  <div className="w-full mr-2">
+                    <label className="block text-sm mb-2">
+                      Expires
+                    </label>
+                    <select
+                      type="text"
+                      name="expires"
+                      className="w-full px-2 py-1 border border-[#E4E4E7] rounded-md shadow-md"
+                    >
+                      <option>Month</option>
+                    </select>
+                  </div>
+                  <div className="w-full mr-2">
+                    <label className="block text-sm mb-2">
+                      Year
+                    </label>
+                    <select
+                      type="text"
+                      name="year"
+                      className="w-full px-2 py-1 border border-[#E4E4E7] rounded-md shadow-md"
+                    >
+                      <option>Year</option>
+                    </select>
+                  </div>
+                  <div className="w-full">
+                    <label className="block text-sm mb-2">
+                      CVC
+                    </label>
+                    <input
+                      type="text"
+                      name="cvc"
+                      className="w-full px-3 py-1 text-[#71717A] border border-[#E4E4E7] rounded-md shadow-md"
+                      defaultValue="CVC"
+                    />
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  className="md:w-1/2 w-full py-2 px-5 bg-[#DB2777] text-white rounded-md mt-12"
+                >
+                  Save 👁️
+                </button>
+              </div>
+
+
+
+              <div className="w-1/2">
+                <div className="">
+
+                  <h1 className="text-sm font-medium">Exclusive Offers & Product News</h1>
+                  <div className="flex justify-between items-start">
+                    <p className="text-[#71717A]">
+                      Receive discounts, tips, updates, and expert advice through email.
+                    </p>
+                    <button
+                      onClick={handleExclusiveToggle}
+                      type="button"
+                      className={`w-16 h-6 flex items-center rounded-full p-1 transition duration-300 ${isOnExclusive ? "bg-black" : "bg-gray-300"
+                        }`}
+                    >
+                      <div
+                        className={`w-5 h-5 bg-white rounded-full shadow-md transform transition duration-300 ${isOnExclusive ? "translate-x-6" : "translate-x-0"
+                          }`}
+                      ></div>
+                    </button>
+                  </div>
+
+                  <h1 className="text-sm font-medium mt-6">Collection of Data</h1>
+                  <div className="flex justify-between">
+                    <p className="text-[#71717A]">
+                      Agree to the Terms of Usage and Privacy Policy.
+                    </p>
+                    <button
+                      onClick={handleCollection}
+                      type="button"
+                      className={`w-12 h-6 flex items-center rounded-full p-1 transition duration-300 ${isOnCollection ? "bg-black" : "bg-gray-300"
+                        }`}
+                    >
+                      <div
+                        className={`w-5 h-5 bg-white rounded-full shadow-md transform transition duration-300 ${isOnCollection ? "translate-x-6" : "translate-x-0"
+                          }`}
+                      ></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </form>
       </div>
 
