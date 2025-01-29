@@ -2,6 +2,7 @@ import Contact from "./components/Contact"
 import Home from "./components/Home/Home"
 import Login from "./components/Login"
 import Profile from "./components/profile/Profile"
+import ProfileEdit from "./components/profile/ProfileEdit"
 import Registration from "./components/Registration"
 
 function App() {
@@ -12,8 +13,8 @@ function App() {
       {/* <Registration/> */}
       {/* <Contact/> */}
       {/* <Home/> */}
-      <Profile/>
-      {/* <Test/> */}
+      {/* <Profile/> */}
+      <ProfileEdit/>
     </>
   )
 }
