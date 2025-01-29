@@ -66,7 +66,7 @@ export default function Profile() {
 
       <div className="max:w-full flex md:flex-row flex-col-reverse justify-between md:mx-11 mx-auto md:my-11 my-2">
         {/* Left Sidebar  */}
-        <div className="w-[8%] md:block hidden">
+        <div className="w-[10%] md:block hidden">
           <h3 className="font-semibold">Setting</h3>
           <ul className="pt-2">
             <li><span className="font-light pr-1">✓</span>Dashboard</li>
@@ -76,7 +76,7 @@ export default function Profile() {
           </ul>
         </div>
 
-        <div className="flx justify-center max:w-[50%] border rounded-lg px-6 py-4 md:block hidden">
+        <div className="flx justify-center max:w-[70%] border rounded-lg px-6 py-4 md:block hidden">
 
           {/* Table part  */}
           <div className="p-4">
@@ -143,7 +143,7 @@ export default function Profile() {
             </div>
           </div>
         </div>
-        <div className="max:w-[35%]">
+        <div className="max:w-[20%] md:-mt-32 z-40">
 
           <div className="">
             {/* Right Top */}
