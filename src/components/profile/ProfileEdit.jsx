@@ -20,7 +20,6 @@ export default function ProfileEdit() {
           <h1 className="text-3xl font-bold">Edit Profile</h1>
           <p>last update: 20SS/SS/SS</p>
         </div>
-
         <div className="md:flex md:flex-row flex-col md:justify-between mb-5 md:mt-1  mt-[22px] gap-x-5 md:mx-0 mx-4">
           {/* Form top part  */}
           <div className="md:w-[50%] w-full">
@@ -316,8 +315,6 @@ export default function ProfileEdit() {
               </div>
             </div>
 
-
-
             <div className="md:w-1/2 w-full md-mt-0 mt-9">
               <div className="">
 
@@ -359,9 +356,6 @@ export default function ProfileEdit() {
               </div>
             </div>
 
-
-
-
           </div>
           <div className="w-[200px] md:mx-0 mx-auto">
             <button
@@ -370,26 +364,9 @@ export default function ProfileEdit() {
             >
               Save 👁️
             </button>
-
           </div>
-
-
-
-
-
-
-
         </div>
-
-
-
-
-
-
-
       </form>
-
-
     </>
   )
 }
