@@ -53,7 +53,7 @@ export default function DataLibrary() {
         <hr className="border border-[#D9D9D9] mt-5 mb-[60px] -ms-6 -mr-8" />
       </div>
 
-      <div className="flex justify-start gap-x-7">
+      <div className="flex justify-start gap-x-7 bg-[#F0F0F0]">
         <nav className="w-[15%] md:block hidden ms-11">
           <h3 className="font-semibold">Data</h3>
           <ul className="pt-2">
