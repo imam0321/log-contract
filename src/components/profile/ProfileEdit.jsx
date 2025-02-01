@@ -316,9 +316,11 @@ export default function ProfileEdit() {
             </div>
 
             <div className="md:w-1/2 w-full md-mt-0 mt-9">
-              <div className="">
+              <div>
 
-                <h1 className="text-sm font-medium">Exclusive Offers & Product News</h1>
+                <h1 className="text-sm font-medium">
+                  Exclusive Offers & Product News
+                </h1>
                 <div className="flex justify-between items-start">
                   <p className="text-[#71717A]">
                     Receive discounts, tips, updates, and expert advice through email.
